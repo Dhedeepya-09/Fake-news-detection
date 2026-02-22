@@ -1,113 +1,117 @@
 📰 Fake News Detection using Machine Learning
-📌 Project Overview
-This project implements a Fake News Detection System using Machine Learning techniques.
-The model classifies news articles as REAL or FAKE using Natural Language Processing (NLP) and supervised learning.
+�
+A Natural Language Processing Project to Classify News as REAL or FAKE 
 
-The system uses:
-
-TF-IDF Vectorization
-
-Passive Aggressive Classifier
-
-Real-world news dataset
-
-Python & Scikit-learn
-
-🚀 Technologies Used
-Python
-
-Pandas
-
-NumPy
-
-Scikit-learn
-
-Matplotlib
-
-Seaborn
-
+🚀 Project Overview
+With the rapid growth of digital platforms like Facebook and Twitter, misinformation spreads faster than ever.
+This project builds an Automated Fake News Detection System using:
+🔹 Natural Language Processing (NLP)
+🔹 TF-IDF Vectorization
+🔹 Passive Aggressive Classifier
+🔹 Supervised Machine Learning
+The model predicts whether a news article is:
+✅ REAL
+❌ FAKE
+❗ Problem Statement
+Fake news can:
+Manipulate public opinion
+Influence elections
+Spread panic
+Damage credibility of institutions
+Manual verification is inefficient.
+Hence, an intelligent ML-based detection system is required.
 📂 Dataset
-The dataset used is:
-
-Fake or Real News Dataset
-Source:
-https://raw.githubusercontent.com/lutzhamel/fake-news/master/data/fake_or_real_news.csv
-
-It contains:
-
-News article text
-
-Label (FAKE / REAL)
-
-~6000+ news samples
-
-⚙️ How It Works
-1️⃣ Text Preprocessing
-News text is converted into numerical format using:
-
-TF-IDF (Term Frequency - Inverse Document Frequency)
-
-This helps the model understand important words in each article.
-
-2️⃣ Model Training
-We use:
-
-Passive Aggressive Classifier
-
-It is suitable for large-scale text classification problems and updates weights only when misclassification occurs.
-
-3️⃣ Prediction
-The model predicts:
-
-REAL → Genuine News
-
-FAKE → Fake News
-
-📊 Model Performance
-Accuracy: ~90%+ (varies slightly per run)
-
+📌 Fake or Real News Dataset
+🔗 Source:
+https://raw.githubusercontent.com/lutzhamel/fake-news/master/data/fake_or_real_news.csv�
+📊 Dataset Details
+📄 6000+ news articles
+📝 Text column (news content)
+🏷 Label column (REAL / FAKE)
+🛠 Tech Stack
+💻 Programming Language
+Python
+📚 Libraries Used
+Pandas
+NumPy
+Scikit-learn
+Matplotlib
+Seaborn
+☁ Platform
+Google Colab
+Jupyter Notebook
+⚙️ Methodology
+1️⃣ Data Preprocessing
+Load dataset
+Handle missing values
+Split into training & testing sets
+2️⃣ Text Vectorization – TF-IDF
+TF-IDF (Term Frequency – Inverse Document Frequency):
+Converts text into numerical format
+Assigns importance to meaningful words
+Reduces impact of common words
+3️⃣ Model Used – Passive Aggressive Classifier
+🚀 Why This Model?
+Fast and efficient
+Suitable for large-scale text classification
+Updates weights only when misclassification occurs
+Performs well for binary classification
+4️⃣ Model Training & Evaluation
+80% Training Data
+20% Testing Data
+Evaluation Metrics:
+Accuracy Score
 Confusion Matrix
-
-Classification Report (Precision, Recall, F1-score)
-
-▶️ How to Run (Google Colab)
+Precision
+Recall
+F1-Score
+📊 Model Performance
+Metric
+Performance
+Accuracy
+~90%+
+Precision
+High
+Recall
+High
+F1-Score
+Balanced
+⚠ Results may vary slightly per execution.
+▶️ How to Run the Project
+✅ Run on Google Colab
 Open Google Colab
-
-Copy and paste the provided Python code
-
+Paste the provided Python code
 Run all cells
+Test custom news text
+No dataset download required (auto-fetched from URL).
+📁 Project Structure
+Copy code
 
-Test with custom news headlines
+Fake-News-Detection/
+│
+├── fake_news_detection.ipynb
+├── README.md
+└── requirements.txt
+💡 Example Prediction
+📝 Input:
+Copy code
 
-No dataset download required (auto-loaded from URL).
-
-🧠 Key Concepts Used
-Natural Language Processing (NLP)
-
-TF-IDF Vectorization
-
-Supervised Machine Learning
-
-Text Classification
-
-Binary Classification
-
-📌 Example Usage
-Input:
-
-NASA announces new discovery on Mars
-Output:
+NASA announces discovery of water traces on Mars.
+🤖 Output:
+Copy code
 
 Prediction: REAL
+🧠 Key Concepts Covered
+Natural Language Processing (NLP)
+TF-IDF Vectorization
+Supervised Machine Learning
+Binary Classification
+Model Evaluation
 🔮 Future Improvements
-Deploy using Streamlit Web App
-
-Use Deep Learning (LSTM / BERT)
-
-Add Model Saving (.pkl)
-
-Improve preprocessing with stemming & lemmatization
-
+🌐 Deploy using Streamlit
+💾 Save trained model (.pkl)
+🤖 Implement Deep Learning (LSTM / BERT)
+🧹 Advanced preprocessing (Stemming, Lemmatization)
+📊 Add interactive dashboard
 👩‍💻 Author:
-
-P.Dhedeepya
+Dhedeepya
